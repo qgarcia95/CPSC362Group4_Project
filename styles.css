@@ -1,5 +1,3 @@
-
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -309,17 +307,19 @@
         margin: 0 auto;
         height: 90vh;
     }
-    
-    .main__content {
+
+    .main__container {
         text-align: center;
-        margin-bottom: 4rem;
+        margin-left: 4rem;
+
     }
 
     .main__content h1 {
         font-size: 2.5rem;
         margin-top: 2rem;
-    }
 
+    }
+    
     .main__content h2 {
         font-size: 3rem;
     }
@@ -327,15 +327,18 @@
     .main__content p {
         margin-top: 1rem;
         font-size: 1.5rem;
-    }
+    }   
+    
 }
 
 @media screen and (max-width: 480px) {
+
     .main__content h1 {
         font-size: 2rem;
         margin-top: 3rem;
-    }
 
+    }
+    
     .main__content h2 {
         font-size: 2rem;
     }
@@ -343,10 +346,37 @@
     .main__content p {
         margin-top: 2rem;
         font-size: 1.5rem;
-    }
+    }   
 
     .main__btn {
         padding: 12px 36px;
         margin: 2.5rem 0;
     }
+    
+}
+
+
+/* Maps Section CSS*/
+
+.maps {
+    background: rgb(4, 28, 136);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.maps h1 {
+    background-color: orange;
+    background-image: linear-gradient(to right, rgb(212, 118, 10) 0%, rgb(4, 28, 136) 100%); 
+    background-size: 100%;
+    margin-top: 5rem;
+    margin-bottom: 2.5rem;
+    font-size: 2.5rem;    
+}
+
+.maps__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
 }
